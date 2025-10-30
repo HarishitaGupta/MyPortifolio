@@ -354,6 +354,15 @@ main {
   border-radius: 8px;
 }
 
+.info-content .resume-download{
+  color: var(--white-1);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -750,11 +759,11 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  filter: none;
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: none; }
 
 
 
@@ -872,7 +881,7 @@ main {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #Projects
 \*-----------------------------------*/
 
 .filter-list { display: none; }
@@ -1026,6 +1035,59 @@ main {
   font-weight: var(--fw-300);
 }
 
+/* === Skills Section (append to your style.css) === */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Card header (icon + title) */
+.skill-card__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+/* Pills container */
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual pill */
+.pill {
+  background: var(--onyx);
+  color: var(--white-2);
+  border: 1px solid var(--jet);
+  border-radius: 500px;
+  padding: 6px 12px;
+  font-size: var(--fs-7);
+  line-height: 1;
+  transition: transform var(--transition-1), border-color var(--transition-1);
+}
+
+.pill:hover {
+  transform: translateY(-1px);
+  border-color: var(--orange-yellow-crayola);
+}
+
+/* Responsive layout (match your breakpoints) */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* === /Skills Section === */
 
 
 
@@ -1244,7 +1306,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #Projects, BLOG 
    */
 
   .project-img,
@@ -1503,7 +1565,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG
+   * #Projects, BLOG
    */
 
   .project-img, .blog-banner-box { border-radius: 16px; }
@@ -1596,7 +1658,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * PORTFOLIO
+   * Projects
    */
 
   .article-title { padding-bottom: 20px; }
@@ -1622,7 +1684,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* Projects and blog grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
@@ -1741,7 +1803,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * PORTFOLIO
+   * Projects
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
