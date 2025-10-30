@@ -354,17 +354,38 @@ main {
   border-radius: 8px;
 }
 
-.info-content .resume-download{
+.info-content .resume-download {
+  /* visually match `.title` while keeping layout stable */
   color: var(--white-1);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
-  padding: 3px 12px;
+  padding: 3px 10px 10px 3px;
   border-radius: 8px;
+  margin-top: 6px;
+  text-align: center;
 }
 
+/* anchor inside resume-download: use class to override inline styles if present */
+.info-content .resume-download a.resume-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+}
+
+.info-content .resume-download a.resume-link span {
+  display: inline; /* override global reset which sets span to block */
+}
+
+.info-content .resume-download a.resume-link:hover,
+.info-content .resume-download a.resume-link:focus {
+  text-decoration: underline;
+}
+
+
 .info_more-btn {
-  position: absolute;
+  position: absolute; 
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
