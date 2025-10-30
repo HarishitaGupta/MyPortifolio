@@ -1199,8 +1199,9 @@ Systems, Software System Engineering
           <h3 class="h3 form-title">Contact Form</h3>
 
           <form action="https://formsubmit.co/harshita.gupta1502@gmail.com" method="POST" class="form" data-form>
-
             <!-- Formsubmit: no-signup POST target. On first submit you'll receive a verification email to activate forwarding. -->
+            <!-- After successful submission FormSubmit will redirect to the URL provided in _next -->
+            <input type="hidden" name="_next" value="https://harishitagupta.github.io/MyPortifolio/" />
             <input type="hidden" name="_subject" value="New message from portfolio" />
             <input type="hidden" name="_captcha" value="false" />
 
