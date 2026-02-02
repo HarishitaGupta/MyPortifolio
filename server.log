@@ -1,0 +1,16 @@
+::ffff:127.0.0.1 - - [30/Oct/2025 23:22:25] "HEAD / HTTP/1.1" 200 -
+::1 - - [30/Oct/2025 23:22:35] "GET / HTTP/1.1" 200 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/css/style.css HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/pp.jpeg HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/icon-design.svg HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/js/script.js HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/freelacing.svg HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/icon-dev.svg HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/tcs.png HTTP/1.1" 200 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/HARMAN-logo.png HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/ecwlogo.png HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/trinity_logo.webp HTTP/1.1" 304 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/project2.PNG HTTP/1.1" 200 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/project1.png HTTP/1.1" 200 -
+::1 - - [30/Oct/2025 23:22:35] "GET /assets/images/project3.jpg HTTP/1.1" 200 -
+::1 - - [30/Oct/2025 23:22:37] "GET /assets/images/favicon.png HTTP/1.1" 304 -
